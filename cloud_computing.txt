@@ -8,3 +8,5 @@ Advantages of cloud computing
 2.Elasticity
 3.Cost savings
 4.Deploy globally in minutes
+
+reference:https://aws.amazon.com/what-is-cloud-computing/?nc1=f_cc
