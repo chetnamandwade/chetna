@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>sorting array in descending order</p>
+
+<button onclick="myFunction()">click here</button>
+
+<p id="demo"></p>
+
+<script>
+var Names = ["vidya", "mobile", "test", "aaradhya","vidyanidhi"];
+document.getElementById("demo").innerHTML = Names;
+
+function myFunction() {
+  Names.sort();
+  Names.reverse();
+  document.getElementById("demo").innerHTML = Names;
+}
+</script>
+
+</body>
+</html>
