@@ -1,0 +1,23 @@
+<!-- Using arrow function, print factorial of a number-->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Factorial using arrow function</h2>
+Number:<input type="text" id="demo1"><br/>
+<br/><button type="button"  onclick=factorial()>click here</button><br/>
+<br/>Factorial of a number:</input><input type="text" id="demo2"></input>
+<script>
+var factorial=()=>
+{
+    var i,n,f=1;
+    n=Number(document.getElementById("demo1").value);
+ for(i=1;i<=n;i++)
+ {
+     f=f*i;
+ }
+ document.getElementById("demo2").value=f;
+}
+</script>
+</body>
+</html>

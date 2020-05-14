@@ -1,0 +1,30 @@
+<!-- Create class math having two static methods, cube and square, 
+whose job is to return the square and cube of a number-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Static Method</h3>
+ <p id="demo"></p>
+ <p id="demo1"></p>
+<script>
+class Math
+{
+    static Cube(x)
+    {
+      return x*x*x;
+      
+    }
+    static Square(x)
+    {
+        return x*x;
+      
+    }
+   
+}
+document.getElementById("demo").innerHTML ="<b>Cube of 10:</b>"+ Math.Cube(10);
+document.getElementById("demo1").innerHTML ="<b>Square of 10:</b>"+ Math.Square(10);
+</script>
+</body>
+</html>
