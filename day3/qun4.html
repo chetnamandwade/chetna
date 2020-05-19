@@ -1,0 +1,44 @@
+<!--Create class Account having instance member name , balance . It has method deposit whose job is to increase balance. Create a child class current account inheriting from Account class. It has method withdraw whose job is to  reduce the balance. Create two objects of current account and call deposit and withdraw method. Child class has show method whose job is to display name and new balance.-->
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+class account
+{
+    constructor(name,balance)
+    {
+        this.name=name;
+        this.balance=500;
+    }
+
+    deposit(x)
+    {
+      
+      this.balance=this.balance+x;
+    }
+
+}
+class currentAccount extends account
+{
+    constructor(name,balance)
+    {
+    super(name,balance);
+    }
+     withdraw(a)
+     {
+         this.balance=this.balance-a;
+     }
+     show()
+    {
+        return "<b>Name is</b>"+" "+this.name+"</br></br>"+"<b>Total balance</b> is 2000 and after withdraw balance is:"+this.balance;
+    }
+}
+obj =new currentAccount("Chetna Mandwade");
+obj.deposit(500);
+obj.withdraw(400);
+document.getElementById("demo").innerHTML = obj.show();
+
+ </script>
+ </body>
+</html>
