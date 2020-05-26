@@ -1,0 +1,13 @@
+<!DOcTYPE html>
+<html>
+    <body>
+        <h2>Self invoked functions</h2>
+        <p id="demo"></p>
+        <script>
+            var sqr=(function(i){
+                return i*i;
+            })(12);
+                document.getElementById("demo").innerHTML=sqr;
+        </script>
+    </body>
+</html>
