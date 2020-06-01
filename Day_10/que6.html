@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            addition and substraction of two numbers
+        </title>
+    </head>
+    <body>
+        <script>
+            function addition(){
+                num1=document.getElementById("first").value;
+                num2=document.getElementById("second").value;
+                document.getElementById("result").innerHTML=Number(num1)+Number(num2);
+            }
+
+            function substraction(){
+                num1=document.getElementById("first").value;
+                num2=document.getElementById("second").value;
+                document.getElementById("result").innerHTML=Number(num1)-Number(num2);
+            }
+        </script>
+        
+        <form>
+            1st Number:<input type="text" id="first" name="a">
+            2nd Number:<input type="text" id="second" name="a">
+            <br><br>
+            <input type="radio" onclick="addition()" value="addition">Add
+            <input type="radio" onclick="substraction()" value="subsraction">Substract
+            <br><br>
+            
+        </form>
+        <p>Result is : 
+            <span id = "result"></span>
+            </p>
+            
+      
+    </body>
+</html>

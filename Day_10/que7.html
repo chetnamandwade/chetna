@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            p{background-color:lightblue}
+        </style>
+        <p>HELLO...My name is Chetna </p></br>
+        <p>WelcoME TO this page</p></br>
+        <p>this is my 3rd paragraph with blue color</p></br>
+        <button onclick="alert(count())">count para</button>
+        <script>
+            function count(){
+                var x=document.getElementsByTagName("p");
+                var i=0,count=0;
+                for(i=0;i<x.length;i++){
+                    count++;
+                }
+                return count;
+            }
+        </script>
+    </body> 
+</html>
