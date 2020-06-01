@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Total of items selected from Checkbox</title>       
+    </head>
+    
+    <body>
+            <h3>Total of items selected from given Checkbox :</h3>
+        <label><b>Ramayana = 1000/-</b></label> 
+        <input type = "checkbox" name = "book" value = 1000><br>
+
+        <label><b>Mahabharata = 1500/-</b></label>
+        <input type = "checkbox" name = "book" value = 1500><br>
+
+        <label><b>Bhagwat Geeta = 1100/-</b></label> 
+        <input type = "checkbox" name = "book" value = 1100><br><br>
+
+        <input id = "read" placeholder = "Select The Book!!"><br><br>
+        <button type = "button" onclick = "myTotal()">Total!!</button><br/>
+
+        <script>
+            function myTotal()
+                {
+                    var x = document.getElementsByName("book");
+                    var price = 0;
+                
+                    for(let i = 0; i < x.length; i++)
+                        {
+                            if(x[i].checked)
+                                {
+                                    price = parseInt(x[i].value) + parseInt(price);
+                                }
+                        }
+                    document.getElementById("read").value = price + "/- Rs. Only";
+                }   
+        </script>
+
+    </body>
+
+</html>

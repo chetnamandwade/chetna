@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <body style="background-color:lightskyblue">
+        
+        <b>Enter Text here : </b><input type = "text" id = "1" placeholder = "Enter Text">
+        <span id = "2"></span><br><br>
+        <button type = "button" onclick = "myFunction()">Click!!</button>
+        
+
+        <script>
+            function myFunction()
+            {
+                var x = document.getElementById("1").value;
+                if(x == 0)
+                {
+                    try
+                    {
+                        throw "<b>Error</b>, Please enter right Input.";
+                    }
+                    catch(err)
+                    {
+                        document.write(err);
+                    }
+                }
+                else 
+                {
+                    document.getElementById("2").innerHTML = x;
+                }
+            }
+        </script>
+    </body>
+</html>
