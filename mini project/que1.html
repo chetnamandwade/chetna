@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dispaly message according to time of the day</title>
+    </head>
+    <body>
+	<p id="demo"></p>
+	
+	<script>
+	
+    var person = prompt("Please enter your name:");
+  var txt;
+  var today=new Date()
+  var hour= today.getHours()
+  
+  if(hour>=0 && hour<=12){
+      txt="GOOD MORNING"+" "+person +"...!";
+  }
+   else if(hour>=12 && hour<=17){
+       txt="GOOD AFTERNOON"+" "+person+"...!";
+   }
+   else if(hour>17 && hour<24){
+       txt="GOOD EVENING"+" "+person+"...!";
+   }
+  document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
